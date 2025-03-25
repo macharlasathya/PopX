@@ -1,0 +1,70 @@
+/* Center the card exactly in the middle */
+.account-container {
+  background: white;
+  color: black;
+  width: 90%; /* Responsive width */
+  max-width: 400px; /* Mobile-friendly */
+  min-height: 450px; /* Increased height */
+  
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Perfect centering */
+  
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.account-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.account-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.profile-pic {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+}
+
+.user-details h5 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.text-muted {
+  color: #666;
+}
+
+.account-text {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .account-container {
+    width: 95%;
+    min-height: 500px; /* More height for smaller screens */
+    padding: 20px;
+  }
+
+  .profile-pic {
+    width: 80px;
+    height: 80px;
+  }
+}
